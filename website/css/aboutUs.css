@@ -1,0 +1,46 @@
+#map {
+	width: 40%;
+	float: left;
+}
+
+#contactInfo {
+	width: 60%;
+	float: left;
+}
+
+#main h1 {
+	text-align: center;
+	font-size: 26px;
+}
+
+#map h1 {
+	text-align: center;
+	font-size: 22px;
+	padding-top: 10px;
+}
+
+#contactInfo>h1 {
+	text-align: center;
+	font-size: 22px;
+	padding-top: 10px;
+}
+
+.contact {
+	width: 100%;
+	display: inline-block;
+}
+
+.contact h1 {
+	font-size: 20px;
+	float: left;
+	width: 50%;
+}
+
+.contact p {
+	font-size: 14px;
+	float: right;
+	width: 50%;
+	text-align: left;
+	vertical-align: center;
+	line-height: normal;
+}

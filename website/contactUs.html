@@ -5,20 +5,54 @@
     <title>Contact Us | Premier Products</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contactUs.css" />
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   </head>
 
   <body>
     <div id="header">
-
+      <h1>Premier Products</h1>
+      <a href="home.html"><img src="img/logo.png" alt="Premier Products Logo"/></a>
     </div>
 
     <div id="content">    
       <div id="main">
+        <h1>About Premier Products</h1>
+
+        <form id="contactUsForm" onsubmit="checkContactForm(); return false;">
+          <p>Please provide your feedback in the boxes below</p>    
+          <p>
+            <label for="firstname">First name:</label>
+            <input name="firstname" id="firstname" onfocus="resetField(this);" />
+          </p>
+          <p>
+            <label for="lastname">Last name:</label>
+            <input name="lastname" id="lastname" onfocus="resetField(this);" />
+          </p>
+          <p>
+            <label for="email">E-mail address:</label>
+            <input name="email" id="email" onfocus="resetField(this);" />
+          </p>
+          <p>
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" onfocus="resetField(this);"></textarea>
+          </p>
+          <p>
+            <input type="checkbox" name="vehicle" value="Bike">
+            <label for="subscribe">Subscribe to our promotions</label>
+          </p>
+          <p>
+            * Required fields
+          </p>
+          <p>
+            <button type="submit">Send Message</button>
+            <button type="reset">Reset Form</button>
+          </p>
+        </form>
         
       </div>
       <div id="navigation">
-        <h2>Navigation</h2>
+        <h1>Navigation</h1>
         <ul>
           <li><a href="home.html">Home</a></li>
           <li>
@@ -38,7 +72,7 @@
 
     <div id="footer">
       <p>
-        Copyright &copy; 2014 Premier Products. All rights reserved.
+        Copyright &copy; 2014 Premier Products. All rights reserved.<br />
         Website developed by Derp &amp; Co.
       </p>
     </div>

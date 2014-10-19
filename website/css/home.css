@@ -1,0 +1,38 @@
+.specials {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.specials h1 {
+	text-align: center;
+}
+
+.specials .special {
+	width: 330px;
+	float:left;
+}
+
+.special img {
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+.special h1, .special h2, .special p {
+	float right;
+}
+
+.special h1 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.special h2 {
+	font-size: 15px;
+	text-align: center;
+	color: green;
+}
+
+.special p {
+	font-size: 14px;
+}
