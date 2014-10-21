@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
-    <title>Contact Us | Premier Products</title>
+    <title>Home | Premier Products</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contactUs.css" />
+    <link rel="stylesheet" href="css/all.css" />
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   </head>
 
@@ -17,38 +17,40 @@
 
     <div id="content">    
       <div id="main">
-        <h1>About Premier Products</h1>
+        <h1>All Products</h1>
+        <div id="options">
+          <p>Filter:</p>
+          <ul id="filterOptions">
+            <li id="filterAll" class="selected">All</li>
+            <li id="filterCD">CD</li>
+            <li id="filterDVD">DVD</li>
+            <li id="filterBluray">Blu-Ray</li>
+            <li id="filterBurner">Burner</li>
+          </ul>
+          
+          <p>Sort by:</p>
+          <ul id="sortOptions">
+            <li id="sortAlpha">Alphabetical</li>
+            <li id="sortRating">Rating</li>
+          </ul>
+        </div>
 
-        <form id="contactUsForm" onsubmit="checkContactForm(); return false;">
-          <p>Please provide your feedback in the boxes below</p>    
-          <p>
-            <label for="firstname">First name:</label>
-            <input name="firstname" id="firstname" onfocus="resetField(this);" />
-          </p>
-          <p>
-            <label for="lastname">Last name:</label>
-            <input name="lastname" id="lastname" onfocus="resetField(this);" />
-          </p>
-          <p>
-            <label for="email">E-mail address:</label>
-            <input name="email" id="email" onfocus="resetField(this);" />
-          </p>
-          <p>
-            <label for="message">Your Message:</label>
-            <textarea name="message" id="message" onfocus="resetField(this);"></textarea>
-          </p>
-          <p>
-            <input type="checkbox" name="vehicle" value="Bike">
-            <label for="subscribe">Subscribe to our promotions</label>
-          </p>
-          <p>
-            * Required fields
-          </p>
-          <p>
-            <button type="submit">Send Message</button>
-            <button type="reset">Reset Form</button>
-          </p>
-        </form>
+        <div id="products">
+          <ul id="grid">
+            <li class="dvd">
+              <a href="img/dvdRewinder.jpg" title="DVD Rewinder" rel="lightbox"><img src="img/dvdRewinder.jpg" alt="DVD Rewinder"/></a>
+              <strong class="title">DVD Rewinder</strong>
+              <div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+            </li>
+
+            <li class="dvd">
+              <a href="img/dvdRewinder.jpg" title="DVD Rewinder" rel="lightbox"><img src="img/dvdRewinder.jpg" alt="DVD Rewinder"/></a>
+              <strong class="title">DVD Rewinder</strong>
+              <div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+            </li>
+            
+          </ul>
+        </div>
         
       </div>
       <div id="navigation">

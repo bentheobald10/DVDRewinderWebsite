@@ -1,6 +1,7 @@
 .specials {
-	width: 100%;
 	padding-top: 20px;
+	overflow: hidden;
+	margin: 10px;
 }
 
 .specials h1 {
@@ -8,7 +9,7 @@
 }
 
 .specials .special {
-	width: 330px;
+	width: 50%;
 	float:left;
 }
 
@@ -16,6 +17,7 @@
 	float: left;
 	width: 150px;
 	height: 150px;
+	margin: 10px;
 }
 
 .special h1, .special h2, .special p {

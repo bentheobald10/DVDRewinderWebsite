@@ -1,0 +1,35 @@
+#options { margin:10px; overflow:hidden; }
+#options p, #options ul, #options li { float:left; }
+#options p { margin-right:10px; }
+#options ul { list-style:none; margin-right:20px; overflow:hidden; }
+#options li { float:left; background:#eee; padding:0 10px; cursor:pointer; }
+#options li.selected { background:#08f; color:#fff; }
+
+#grid { list-style:none; overflow: hidden;}
+#grid li { margin:10px; width:140px; height:180px; float: left;}
+#grid a { display:block; width:140px; height:140px; margin-bottom:5px; background:#000; }
+#grid strong, #grid span { display:block; font-size:12px; line-height:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;  }
+
+.rating {
+	overflow: hidden;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+	float: right;
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}

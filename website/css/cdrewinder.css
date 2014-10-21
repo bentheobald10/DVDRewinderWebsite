@@ -1,0 +1,27 @@
+#options {
+	margin:10px;
+	overflow:hidden;
+}
+
+#options p, #options ul, #options li {
+	float:left;
+}
+
+#options p {
+	margin-right:10px;
+}
+
+#options ul {
+	list-style:none;
+	margin-right:20px;
+	overflow:hidden;
+}
+
+#options li {
+	float:left; background:#eee; padding:0 10px; cursor:pointer;
+}
+
+#options li.selected {
+	background:#08f; color:#fff;
+}
+

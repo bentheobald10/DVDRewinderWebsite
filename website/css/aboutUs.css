@@ -1,6 +1,11 @@
 #map {
-	width: 40%;
 	float: left;
+}
+
+#map_canvas {
+	width: 250px;
+	height: 250px;
+	background-color: #CCC;
 }
 
 #contactInfo {

@@ -6,6 +6,7 @@
 html {
 	background-color: white;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	height: 100%;
 }
 
 body {
@@ -13,10 +14,10 @@ body {
 	margin-right: auto;
 	background-color: #131313;
 	box-shadow: -5px 0 15px rgba(0, 0, 0, 0.75);
+	height: 100%;
 }
 
 body, #header, #footer {
-	width: 900px;
 }
 
 a {
@@ -29,7 +30,7 @@ a {
 
 #header {
 	height: 200px;
-	margin-top: 10px;
+	padding-top: 10px;
 }
 
 #header a {
@@ -57,24 +58,19 @@ a {
 	padding-top: 10px;
 }
 
-
-#footer {
-	float: bottom;
-}
-
 #navigation {
 	margin-top: 10px;
     position: absolute;
     top: 200px;
     float: left;
-
+    width: 200px;
 }
 
 #main {
-	float: right;
-	width: 680px;
-	padding: 10px;
+	margin-left: 200px;
 	background-color: white;
+	overflow: hidden;
+	padding-right: 10px;
 }
 
 #content {
@@ -128,10 +124,9 @@ ul {
 }
 
 #footer {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	color: rgb(102, 102, 102);
 	text-align: center;
-	height: 20px;
 	bottom: 0px;
 }
