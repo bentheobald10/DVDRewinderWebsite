@@ -64,6 +64,11 @@ a {
     top: 200px;
     float: left;
     width: 200px;
+    background-image: url(../img/nav_background.png);
+	background-repeat: repeat-y;
+	background-position: left top;
+	overflow: hidden;
+	height: 100%;
 }
 
 #main {
