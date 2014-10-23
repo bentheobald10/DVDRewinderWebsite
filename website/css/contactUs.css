@@ -1,24 +1,11 @@
-#main h1 {
-	text-align: center;
-	font-size: 26px;
-}
-
 #contactUsForm label {
+	float: left;
 	font-weight:700;
 	display:inline-block;
 	width:150px;
 }
 
-#contactUsForm input {
-	width:250px;
-}
-
-#contactUsForm textarea {
-	display:block;
-	width:400px;
-	font:100% sans-serif;
-}
-
-#contactUsForm button {
-	width:200px;
+#contactUsForm p {
+	padding-left: 20px;
+	padding-top: 10px;
 }
