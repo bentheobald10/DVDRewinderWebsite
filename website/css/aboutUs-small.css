@@ -1,0 +1,12 @@
+#contactInfo {
+	width: 80%;
+	float: left;
+}
+
+.contact {
+	float: left;
+	width: 100%;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

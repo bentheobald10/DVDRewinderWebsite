@@ -74,3 +74,7 @@
 #navigation ul li ul a{
 	text-indent: 45px;
 }
+
+#footer p {
+	margin-left: 200px;
+}
