@@ -46,6 +46,20 @@
 	padding-right: 10px;
 }
 
+
+#navigation li ul {
+	display: block;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.25s;
+}
+
+#navigation li:hover ul {
+	display: block;
+	max-height: 200px;
+	transition: 0.25s max-height;
+}
+
 #navigation li a, #navigation li {
 	background-color: #131313;
 	display: block;

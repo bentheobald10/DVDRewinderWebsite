@@ -62,19 +62,6 @@ ul {
 	color: #131313;
 }
 
-#navigation li ul {
-	display: block;
-	max-height: 0;
-	overflow: hidden;
-	transition: 0.25s;
-}
-
-#navigation li:hover ul {
-	display: block;
-	max-height: 200px;
-	transition: 0.25s max-height;
-}
-
 #footer {
 	width: 100%;
 	padding-top: 10px;
