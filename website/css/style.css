@@ -100,10 +100,15 @@ ul {
 	background-color: #131313;
 	display: block;
     width: 200px;
-	text-align: center;
+	text-align: left;
+	text-indent: 30px;
 	line-height: 40px;
 	font-size: 95%;
 	color: white;
+}
+
+#navigation ul li ul a{
+	text-indent: 45px;
 }
 
 #navigation>ul>li {
@@ -119,13 +124,13 @@ ul {
 	display: block;
 	max-height: 0;
 	overflow: hidden;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 #navigation li:hover ul {
 	display: block;
 	max-height: 200px;
-	transition: 1s max-height;
+	transition: 0.3s max-height;
 }
 
 #footer {
