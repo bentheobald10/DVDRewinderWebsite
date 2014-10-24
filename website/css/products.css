@@ -25,23 +25,23 @@
 	background:#08f; color:#fff;
 }
 
-#productList {
+#products {
 	list-style:none;
 	overflow: hidden;
 }
 
-#productList li {
+#products li {
 	margin:10px;
-	height:200px;
+	height:250px;
 }
 
-#productList a {
+#products a {
 	display:block;
 	height:150px;
 	margin-bottom:5px;
 }
 
-#productList strong, #productList span {
+#products strong, #products span {
 	display:block;
 	font-size:12px;
 	line-height:20px;
