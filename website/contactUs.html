@@ -25,7 +25,7 @@
       <div id="main">
         <h1>Contact Us</h1>
 
-        <form id="contactUsForm" onsubmit="checkContactForm(); return false;">
+        <form id="contactUsForm" onsubmit="checkContactForm(); return false;" action="post">
           <p>Please provide your feedback in the boxes below</p>    
           <p>
             <label for="firstname">* First name:</label>
@@ -41,14 +41,14 @@
           </p>
           <p>
             <label for="message">* Your Message:</label>
-            <textarea name="message" id="message" onfocus="resetField(this);"></textarea>
+            <textarea name="message" id="message" onfocus="resetField(this);" rows="4" cols="100"></textarea>
           </p>
           <p>
-            <input type="checkbox" name="subscribe" value="">
+            <input type="checkbox" id="subscribe" value=""/>
             <label for="subscribe">Subscribe to our promotions</label>
           </p>
-          <br />
           <p>
+            <br />
             * Required fields
           </p>
           <p>
