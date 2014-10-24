@@ -49,6 +49,10 @@
 	overflow:hidden;
 }
 
+.detail {
+  display: none;
+}
+
 span.stars, span.stars span {
     display: block;
     background: url(../img/stars.png) 0 -16px repeat-x;
