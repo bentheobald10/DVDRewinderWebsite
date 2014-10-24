@@ -53,6 +53,11 @@
   display: none;
 }
 
+.unavailable {
+	background: rgba(255,0,0,.5);
+	width: 450px;
+}
+
 span.stars, span.stars span {
     display: block;
     background: url(../img/stars.png) 0 -16px repeat-x;
