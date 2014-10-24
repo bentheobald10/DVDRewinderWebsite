@@ -1,0 +1,38 @@
+#overlay {
+  position:fixed;
+  top:0; left:0; bottom:0; right:0;
+  background:rgba( 0, 0, 0, 0.5 );
+}
+
+#lightbox {
+  position:fixed;
+  top:0; right:0; bottom:0; left:0;
+  width:32px; height:32px;
+  background:url( loading.gif ) center no-repeat;
+  margin:auto;
+}
+
+#lightbox h2 {
+  margin-top: -75px;
+  margin-left: 5px;
+  font-style: italic;
+}
+
+#lightbox p {
+  margin-top: -75px;
+  margin-left: 5px;
+  font-style: italic;
+}
+
+#lightboxImage {
+  margin-top: -100px;
+  border:5px solid #fff;
+  border-bottom: 125px solid #fff;
+  box-shadow:0 0 20px #000;
+}
+
+#closeButton {
+  position:absolute;
+  top:-115px; right:-30px;
+  cursor:pointer;
+}
