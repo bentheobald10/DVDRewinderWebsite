@@ -10,6 +10,18 @@
 #grid a { display:block; width:140px; height:140px; margin-bottom:5px; background:#000; }
 #grid strong, #grid span { display:block; font-size:12px; line-height:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;  }
 
+p.rating span.rating, p.rating span.rating span {
+    display: block;
+    background: url(stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+p.rating span.rating span {
+    background-position: 0 0;
+}
+/
+/*
 .rating {
 	overflow: hidden;
   unicode-bidi: bidi-override;
@@ -33,3 +45,4 @@
    left: 0; 
    color: gold;
 }
+*/
