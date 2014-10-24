@@ -11,6 +11,7 @@ function setupLightbox() {
   $image = $( '<img id="lightboxImage">' )
   $closeButton = $( '<img id="closeButton" src="img/close-button.png">' )
   $caption = $( '<h2 id="caption">' )
+  $rating = $( '<p id="rating">' )
   $detail = $( '<p id="detail">' )
   
   $( 'body' ).append( $overlay );
@@ -18,11 +19,13 @@ function setupLightbox() {
   $lightbox.append( $image );
   $lightbox.append( $closeButton );
   $lightbox.append( $caption );
+  $lightbox.append( $rating );
   $lightbox.append( $detail );
   
   $overlay.hide();
   $lightbox.hide();
   $caption.hide();
+  $rating.hide();
   $detail.hide();
   
   $( 'a[rel=lightbox]' ).on( 'click', showLightbox );
@@ -57,7 +60,9 @@ function loadImage( imageURL, caption, detailText, rating ) {
   $caption.text(caption);
   $caption.delay( 1000 ).fadeIn();
 
-  $detail.before(rating);
+  $rating.html(rating);
+  $rating.delay(1000).fadeIn();
+
   $detail.text(detailText);
   $detail.delay(1000).fadeIn();
 }
@@ -77,5 +82,5 @@ function closeLightbox() {
   $lightbox.fadeOut();
   $caption.fadeOut();
   $detail.fadeOut();
-  $detail.get(0).remove();
+  $rating.fadeOut();
 }
