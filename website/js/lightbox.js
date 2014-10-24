@@ -12,7 +12,6 @@ function setupLightbox() {
   $closeButton = $( '<img id="closeButton" src="img/close-button.png">' )
   $caption = $( '<h2 id="caption">' )
   $detail = $( '<p id="detail">' )
-  $rating = $( '<p id="rating">' )
   
   $( 'body' ).append( $overlay );
   $( 'body' ).append( $lightbox );
@@ -20,13 +19,11 @@ function setupLightbox() {
   $lightbox.append( $closeButton );
   $lightbox.append( $caption );
   $lightbox.append( $detail );
-  $lightbox.append( $rating );
   
   $overlay.hide();
   $lightbox.hide();
   $caption.hide();
   $detail.hide();
-  $rating.hide();
   
   $( 'a[rel=lightbox]' ).on( 'click', showLightbox );
 }
@@ -39,11 +36,11 @@ function showLightbox() {
   $lightbox.fadeIn();
 
   var detail;
-  detail = $(this).closest('li').find('p.detail').html();
-  detail += "\n";
   detail += $(this).closest('li').find('p.price').html();
+  detail += "\n";
+  detail = $(this).closest('li').find('p.detail').html();
 
-  var stars = $(this).closest('li').find('p.rating');
+  var stars = $(this).closest('li').find('p.rating').html();
 
   loadImage( this.href, this.title, detail, stars);
   
@@ -61,11 +58,8 @@ function loadImage( imageURL, caption, detailText, rating ) {
   $caption.delay( 1000 ).fadeIn();
 
   $detail.text(detailText);
+  $detail.before(rating);
   $detail.delay(1000).fadeIn();
-
-  debugger;
-  $rating.content(rating);
-  $rating.delay(1000).fadeIn();
 }
 
 function showImage() {
@@ -83,5 +77,5 @@ function closeLightbox() {
   $lightbox.fadeOut();
   $caption.fadeOut();
   $detail.fadeOut();
-  $rating.fadeOut();
+  $detail.get(0).remove();
 }

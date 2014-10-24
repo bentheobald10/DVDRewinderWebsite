@@ -13,13 +13,12 @@
 }
 
 #lightbox h2 {
-  margin-top: -75px;
+  margin-top: -125px;
   margin-left: 5px;
   font-style: italic;
 }
 
 #lightbox p {
-  margin-top: -75px;
   margin-left: 5px;
   font-style: italic;
 }
@@ -35,4 +34,9 @@
   position:absolute;
   top:-115px; right:-30px;
   cursor:pointer;
+}
+
+#lightbox span{
+  position: relative;
+  z-index: 1000;
 }
