@@ -35,7 +35,7 @@ function showLightbox() {
   $overlay.fadeIn();
   $lightbox.fadeIn();
 
-  var detail;
+  var detail = "";
   detail += $(this).closest('li').find('p.price').html();
   detail += "\n";
   detail = $(this).closest('li').find('p.detail').html();
@@ -57,8 +57,8 @@ function loadImage( imageURL, caption, detailText, rating ) {
   $caption.text(caption);
   $caption.delay( 1000 ).fadeIn();
 
-  $detail.text(detailText);
   $detail.before(rating);
+  $detail.text(detailText);
   $detail.delay(1000).fadeIn();
 }
 
